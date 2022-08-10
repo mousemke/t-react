@@ -1,4 +1,4 @@
-import { TranslationContructorProps, Translator } from "t";
+import { TranslationContructorProps, Translator } from "translationary";
 
 export type UseTInitProps = Omit<
   TranslationContructorProps,
@@ -9,5 +9,5 @@ export interface useTProps extends Partial<UseTInitProps> {
   /**
    * allows for the application of a previously defined init function
    */
-  init?: (TranslationContructorProps) => Translator;
+  init?: (props: TranslationContructorProps) => Translator;
 }

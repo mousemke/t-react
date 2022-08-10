@@ -25,7 +25,7 @@ import exampleTranslations from "../example-app.en.json";
 // };
 // };
 
-describe("t-react", () => {
+describe("translationary-react", () => {
   describe("useT", () => {
     expect(exampleTranslations).toBe(false);
     // renderAndPrepare().then(({ result }) => {

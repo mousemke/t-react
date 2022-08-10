@@ -1,10 +1,10 @@
 import { useMemo, useState } from "react";
 
-import T, { Translator } from "t";
+import T, { Translator } from "translationary";
 
 import type { useTProps } from "./useT.types";
 
-export const useT = ({
+const useT = ({
   appName,
   init,
   lang,
@@ -28,3 +28,5 @@ export const useT = ({
 
   return [t, language];
 };
+
+export default useT;
